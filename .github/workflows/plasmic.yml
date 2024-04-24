@@ -77,8 +77,6 @@ jobs:
         with:
           branch: gh-pages
           folder: ${{ steps.build.outputs.publish_dir }}
-      - name: List all branches
-        run: git branch -a
       - id: pr
         name: Creating pull request...
         uses: repo-sync/pull-request@v2
